@@ -4,52 +4,61 @@
 
 ---
 
+## 🌐 Live
+
+👉 https://your-vercel-link.vercel.app
+
+---
+
 ## ✨ What is Pasta?
 
-Pasta is a simple browser-based tool that cleans up messy text data in seconds.
+Pasta is a fast, no-friction tool for cleaning messy text.
 
 No setup. No login. Just paste and clean.
 
 ---
 
-## 🚀 Features
+## ⚡ Features
 
-- Remove duplicate lines
-- Trim whitespace
-- Remove empty lines
-- Normalize formatting
+- Removes duplicate lines  
+- Trims whitespace  
+- Removes empty lines  
+- Cleans text instantly as you type  
 
 ---
 
 ## 🧠 Usage
 
-1. Paste your messy text into the input box
-2. Click **Clean**
-3. Copy the cleaned result
-
-Done.
+1. Paste your text  
+2. Get cleaned output instantly  
+3. Copy and use  
 
 ---
 
 ## ⚡ Example
 
 ### Input:
+```
 john@test.com  
 john@test.com  
    jane@test.com  
 
 bob@test.com  
+```
 
 ### Output:
+```
 john@test.com  
 jane@test.com  
 bob@test.com  
+```
 
 ---
 
 ## 🛠 Tech
 
-- HTML / CSS / JavaScript *(or React if you use it)*
+- HTML / CSS / JavaScript  
+- Deployed on Vercel  
 
 ---
 
@@ -65,7 +74,7 @@ Pasta is built to be:
 
 ## 📌 Status
 
-MVP in progress 🚧
+Live 🚀
 
 ---
 
