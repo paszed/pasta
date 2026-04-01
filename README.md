@@ -6,7 +6,7 @@
 
 ## 🌐 Live
 
-👉 [https://your-vercel-link.vercel.app](https://pasta-five.vercel.app)
+👉 [pasta](https://pasta-five.vercel.app)
 
 ---
 
