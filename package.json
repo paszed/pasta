@@ -1,9 +1,13 @@
 {
   "name": "pasta",
   "version": "0.1.0",
+  "description": "Deterministic text cleaning tool",
   "type": "module",
   "bin": {
     "pasta": "./bin/pasta"
+  },
+  "scripts": {
+    "build": "node scripts/build.js"
   },
   "license": "MIT"
 }
