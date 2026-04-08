@@ -1,10 +1,9 @@
 {
-  "name": "pasta-cli",
+  "name": "pasta",
   "version": "0.1.0",
-  "description": "Simple deterministic text cleaner",
+  "type": "module",
   "bin": {
     "pasta": "./bin/pasta"
   },
-  "type": "commonjs",
   "license": "MIT"
 }

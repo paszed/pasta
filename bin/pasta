@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { clean } = require("../lib/clean");
+import { clean } from "../lib/clean.js";
 
 let input = "";
 
