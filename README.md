@@ -1,83 +1,90 @@
 # 🍝 Pasta
 
-**Paste messy text → get clean, usable output instantly.**
+Pasta is a simple, deterministic text cleaning tool.
+
+It reads raw text from stdin and outputs clean, usable lines.
 
 ---
 
-## 🌐 Live
+## Behavior
 
-👉 [pasta](https://pasta-five.vercel.app)
-
----
-
-## ✨ What is Pasta?
-
-Pasta is a fast, no-friction tool for cleaning messy text.
-
-No setup. No login. Just paste and clean.
+- Removes duplicate lines
+- Trims whitespace
+- Removes empty lines
+- Preserves original content (no rewriting)
+- Keeps order of first occurrence
 
 ---
 
-## ⚡ Features
+## Usage
 
-- Removes duplicate lines  
-- Trims whitespace  
-- Removes empty lines  
-- Cleans text instantly as you type  
+Pipe any text into Pasta:
 
----
-
-## 🧠 Usage
-
-1. Paste your text  
-2. Get cleaned output instantly  
-3. Copy and use  
-
----
-
-## ⚡ Example
-
-### Input:
-```
-john@test.com  
-john@test.com  
-   jane@test.com  
-
-bob@test.com  
+```bash
+echo -e "a\na\nb" | pasta
 ```
 
-### Output:
-```
-john@test.com  
-jane@test.com  
-bob@test.com  
+```bash
+cat file.txt | pasta
 ```
 
 ---
 
-## 🛠 Tech
+## Example
 
-- HTML / CSS / JavaScript  
-- Deployed on Vercel  
+Input:
+
+```
+ a  
+
+b
+a
+
+c
+```
+
+Output:
+
+```
+a
+b
+c
+```
 
 ---
 
-## 🎯 Goal
+## Philosophy
 
-Pasta is built to be:
+Pasta is intentionally dumb and predictable.
 
-- fast  
-- simple  
-- instantly useful  
+It does not understand meaning — only structure.
 
----
+- No parsing
+- No analysis
+- No configuration
 
-## 📌 Status
-
-Live 🚀
+Just clean text.
 
 ---
 
-## 🧾 License
+## Workflow
+
+Pasta works well in pipelines:
+
+```bash
+tractor ... | pasta
+```
+
+---
+
+## Guarantees
+
+- Deterministic output
+- Stable ordering
+- No data modification (only noise removal)
+
+---
+
+## License
 
 MIT
