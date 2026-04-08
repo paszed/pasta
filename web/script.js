@@ -4,10 +4,6 @@ const input = document.getElementById("input");
 const output = document.getElementById("output");
 const copyBtn = document.getElementById("copyBtn");
 
-const input = document.getElementById("input");
-const output = document.getElementById("output");
-const copyBtn = document.getElementById("copyBtn");
-
 input.addEventListener("input", () => {
   output.value = clean(input.value);
 });
