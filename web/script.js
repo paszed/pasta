@@ -1,7 +1,8 @@
+import { clean } from "./clean.js"
+
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 const copyBtn = document.getElementById("copyBtn");
-import { clean } from "../lib/clean.js";
 
 const input = document.getElementById("input");
 const output = document.getElementById("output");
