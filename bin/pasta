@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const { clean } = require("../lib/clean");
+
+let input = "";
+
+process.stdin.setEncoding("utf8");
+
+process.stdin.on("data", chunk => {
+  input += chunk;
+});
+
+process.stdin.on("end", () => {
+  const result = clean(input);
+  process.stdout.write(result + "\n");
+});
+
+// Handle empty stdin (interactive case)
+if (process.stdin.isTTY) {
+  process.stderr.write("No input provided\n");
+  process.exit(1);
+}
